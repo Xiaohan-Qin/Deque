@@ -1,25 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
-/*
- * This struct represents an individual node within a deque.
- * A node has data and a next and prev pointers.
- */
-typedef struct Node {
-    int data;
-    struct Node* next;
-    struct Node* prev;
-}Node;
-
-/*
- * This struct represents the entire deque.
- * A Deque has size, and a front and rear pointers.
- */
-typedef struct Deque {
-    struct Node* front;
-    struct Node* rear;
-    int size;
-}Deque;
+#include"deque.h"
 
 /*
  * Creates a Deque node by malloc'ing space.
